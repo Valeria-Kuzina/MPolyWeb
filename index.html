@@ -1,52 +1,125 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
 <head>
-    <meta charset="utf-8">
-    <title>SVG</title>
-    <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<title>ЛР3 Кузина ВМ</title>
+	<link rel="stylesheet" type="text/css" href="styles/main.css"/>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<!-- Compressed CSS -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- foundation-float.min.css: Compressed CSS with legacy Float Grid -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="dist/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="dist/assets/owl.theme.default.min.css">
 </head>
 <body>
-<!--    линии, прямоугольники, окружности-->
-<svg display="none">
-    <symbol id="line" viewBox="0 0 100 100">
-        <line x1="0" y1="80" x2="100" y2="20" stroke="black"/>
-    </symbol>
-    <symbol id="rect" viewBox="0 0 100 100">
-        <rect width="50%" height="100" x="25%" y="5"/>
-    </symbol>
-    <symbol id="circle" viewBox="0 0 100 100">
-        <circle r="50" cx="50%" cy="50%"/>
-    </symbol>
-    <symbol id="print" viewBox="0 0 80 90">
-        <circle r="50" cx="50%" cy="50%" x="25%" y="205" fill="#F40F0F"/>
-        <polygon class="glass" points="0,0 90,0 45,45"/>
-        <polygon class="water" points="10,10 80,10 45,45"/>
-        <polygon class="glass" points="5,100 45,45 135,135"/>
-        <polygon class="water" points="25,100 45,75 135,135"/>
-        <line x1="12" y1="90" x2="90" y2="90" stroke="black"/>
-        <line x1="45" y1="46" x2="45" y2="77" stroke="#346ff3"/>
-    </symbol>
-    <symbol id="flag" viewBox="0 0 120 120">
-        <polygon class="flag"
-                 points="12,20 50,20 50,100 31,80 12,100"
-                 />
-    </symbol>
-</svg>
+	<header>
+		<div class="header_title">
+			<h1>На этом сайте показано использование CSS и JS библиотек</h1>
+		</div>
+		
+	</header>
+	<main >
+		<section class="main-wrapper">
+			<div class="main-wrapper__column">
+				<h2>Использованные CSS-Библиотеки</h2>
+				<ul>
+					<li class="hover-spacing">Bootstrap 4</li>
+				</ul>
+			</div>
+			<div class="main-wrapper__column">
+				<h2>Использованные JS-Библиотеки</h2>
+				<ul>
+					<li class="hover-spacing">JQuery</li>
+					<li class="hover-spacing">Owl-carousel</li>
+				</ul>
+			</div>
+		</section>
+		<section>
+			<h1 class="header_title">Пример использования CSS-Библиотеки</h1>
+			<div class="row col-10 offset-1">
+				<div class="col-lg-4  col-md-3 badge-info">
+					Эта колонка занимает 33% пространства на широких экранах благодаря классу col-lg-4 из bootstrap, но на средних экранах она будет занимать меньшую часть благодогя col-md
+				</div>
+				<div  class="col-lg-4 col-md-6 badge-success">
+					Эта колонка занимает 33% пространства на широких экранах благодаря классу col-lg-4 из bootstrap, но на средних экранах она будет занимать меньшую БОЛЬШУЮ благодогя col-md
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+  Нажми на меня
+</button>
+				</div>
+				<div  class="col-lg-4  col-md-3 badge-info">
+					Эта колонка занимает 33% пространства на широких экранах благодаря классу col-lg-4 из bootstrap, но на средних экранах она будет занимать меньшую часть благодогя col-md
+				</div>
+			</div>
+			<!-- Button trigger modal -->
 
-<svg class="icon">
-    <use class="line" xlink:href="#line"></use>
-</svg>
-<svg class="icon">
-    <use class="rect" xlink:href="#rect"></use>
-</svg>
-<svg class="icon">
-    <use class="circle" xlink:href="#circle"></use>
-</svg>
-<svg class="icon">
-    <use class="print" xlink:href="#print"></use>
-</svg>
-<svg class="icon">
-    <use class="flag" xlink:href="#flag"></use>
-</svg>
+
+			<!-- Modal -->
+			<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			  <div class="modal-dialog modal-dialog-centered" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLongTitle">Этот поп-ап и </h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+			        <img src="images/GTF.jpg" class="w-100" alt="GTF" style="object-fit: contain;">
+			         Теорема, от которой люди сходят с ума.
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+			        <button type="button" class="btn btn-primary">Бесполезная кнопка</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+		</section>
+		<section>
+			<h1 class="header_title">Пример использования JS-Библиотек</h1>
+			<h2 class="text-center">Библиотека - "Совиная Каруселька"</h2>
+			<div class="owl-carousel owl-theme">
+			    <div class="item" style="width:100px"><img class="w-100" src="images/PNP.jpg" alt="PNP"></div>
+			    <div class="item" style="width:100px"><img class="w-100" src="images/GTF.jpg" alt="GTF"></div>
+			    <div class="item" style="width:100px"><img class="w-100" src="images/TJM.jpg" alt="TJM"></div>
+			    <div class="item" style="width:100px"><img  class="w-100" src="images/GP.jpg" alt="GP"></div>
+			</div>
+			<h2 class="text-center">Библиотека - "JQuery"</h2>
+			<div class="text-center">С помощью библиотеки я написала код, который вращает картинку по нажатию:</div>
+			<div class="row justify-content-center">
+				<img id="rotateble"class="w-25 image-rotate" src="images/GP.jpg" alt="GP">
+			</div>
+		</section>
+		</main>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="dist/owl.carousel.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+	
+</script>
+	<script src="js/vendor/jquery.js"></script>
+	<script src="scripts/main.js"></script>
+	<script>
+		$(document).ready(function(){
+		  $(".owl-carousel").owlCarousel();
+		});
+		$('.owl-carousel').owlCarousel({
+			center:true,
+		    margin:10,
+		    loop:true,
+		    autoWidth:true,
+		    autoHeight:true,
+		    items:4,
+		    responsive:{
+		        600:{
+		            items:10
+		        }
+		    }
+		})
+	</script>
 </body>
 </html>
