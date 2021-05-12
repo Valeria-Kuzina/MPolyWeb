@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+h1{
+  text-align: center;
+}
+
+
+body{
+	
+  background-image:url(https://animalreader.ru/wp-content/uploads/2016/09/5755b69d19d96.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  color:white;
+
+}
+
+.container{
+  margin: 1%;
+  display: flex;
+}
+
+.item{
+  width: 100px;
+  height: 100px;
+  margin: 2%;
+  color: white;
+  background: #6A5ACD;
+
+  font-size: 30px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.item p{
+  padding: 35px;
+}
+
+.justify{
+  justify-content:space-around;
+}
+.justify-between{
+  justify-content:space-between;
+}
+.center{
+  justify-content: center;
+}
+
+.direction{
+  flex-direction: column;
+}
+
+.reverse{
+  flex-direction: column-reverse;
+}
+.flex_wrap{
+  flex-wrap: wrap;
+}
+.flex_wrap{
+  flex-wrap: nowwrap;
+}
